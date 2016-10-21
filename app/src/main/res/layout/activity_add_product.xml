@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <!--
+    <TextView
+        android:text="Name "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nameTxt"
+        android:layout_alignBaseline="@+id/nameEdt"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Description "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nameTxt"
+        android:layout_alignBaseline="@+id/editDescription"
+        android:id="@+id/descriptionTxt" />
+
+    <TextView
+        android:text="Dossage "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/descriptionTxt"
+        android:layout_alignBaseline="@+id/dossageEdt"
+        android:id="@+id/dossageTxt" />
+
+    <TextView
+        android:text="Brand "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dossageTxt"
+        android:layout_alignBaseline="@+id/brandEdt"
+        android:id="@+id/brandTxt" />
+
+    <TextView
+        android:text="Stock  "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/brandTxt"
+        android:layout_alignBaseline="@+id/stockEdt"
+        android:id="@+id/stockTxt" />
+
+    <TextView
+        android:text="Price "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/brandTxt"
+        android:layout_alignBaseline="@id/priceEdt"
+        android:id="@+id/priceTxt" />
+
+    <TextView
+        android:text="Image "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/priceTxt"
+        android:layout_alignBaseline="@+id/imageEdt"
+        android:id="@+id/imageTxt" />
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:ems="10"
+        android:layout_toRightOf="@id/nameTxt"
+        android:id="@+id/nameEdt" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Description"
+        android:ems="10"
+        android:layout_toRightOf="@id/descriptionTxt"
+        android:layout_below="@id/nameEdt"
+        android:id="@+id/editDescription" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Dossage"
+        android:ems="10"
+        android:layout_below="@+id/editDescription"
+        android:layout_toRightOf="@+id/dossageTxt"
+        android:id="@+id/dossageEdt" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Brand"
+        android:ems="10"
+        android:layout_below="@+id/dossageEdt"
+        android:layout_toRightOf="@id/brandTxt"
+        android:id="@+id/brandEdt" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Price"
+        android:ems="10"
+        android:layout_below="@+id/brandEdt"
+        android:layout_toRightOf="@id/priceTxt"
+        android:id="@+id/priceEdt" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Stock"
+        android:ems="10"
+        android:layout_below="@+id/priceEdt"
+        android:layout_toRightOf="@id/stockTxt"
+        android:id="@+id/stockEdt" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Image"
+        android:ems="10"
+        android:layout_below="@id/stockEdt"
+        android:layout_toRightOf="@id/imageTxt"
+        android:id="@+id/imageEdt" />
+
+    <Button
+        android:text="add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/btnaddProduct" />
+
+        -->
+</RelativeLayout>

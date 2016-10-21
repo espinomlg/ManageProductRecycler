@@ -2,24 +2,24 @@ package com.example.espino.manageproduct;
 
 import android.app.ListActivity;
 import android.os.Bundle;
-import android.widget.ArrayAdapter;
+import android.view.View;
 
-import com.example.espino.manageproduct.Modelo.Product;
-
-import java.util.ArrayList;
 
 public class ListProduct_activity extends ListActivity {
 
-
-    private ArrayAdapter<Product> adapter;
+    private ProductAdapterA adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list_product_activity);
 
-        adapter = new ArrayAdapter<Product>(this, android.R.layout.simple_expandable_list_item_1,((ProductApplication)getApplication()).getProductList());
+        adapter = new ProductAdapterA(this);
         getListView().setAdapter(adapter);
+    }
+
+    public void onClick(View v){
+
     }
 
 

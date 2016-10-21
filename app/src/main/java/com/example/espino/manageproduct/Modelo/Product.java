@@ -1,5 +1,6 @@
 package com.example.espino.manageproduct.Modelo;
 
+import java.util.Locale;
 import java.util.UUID;
 
 /**
@@ -91,6 +92,14 @@ public class Product {
 
     public void setmImage(int mImage) {
         this.mImage = mImage;
+    }
+
+    public String getFormattedPrice(){
+        return String.format("€%s", mPrice);
+    }
+
+    public String getFormattedUnitsinStocks(){
+        return String.format(Locale.getDefault(), "%d u.",mStock);
     }
 
     /*2 productos son iguales cuando tienen el mismo nombre la misma marca y la misma dosificacion*/
