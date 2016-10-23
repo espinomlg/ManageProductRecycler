@@ -26,13 +26,14 @@
         android:id="@android:id/list"/>
 
     <Button
-        android:text="Button"
+        android:text="Add"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_toRightOf="@+id/search_product"
         android:layout_toEndOf="@+id/search_product"
-        android:id="@+id/addBtn" />
+        android:id="@+id/addBtn"
+        android:onClick="onClick"/>
 
     <!--Imprescindible si utilizas ListActivity -->
 

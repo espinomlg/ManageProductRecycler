@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent" android:layout_height="match_parent">
-    <!--
+
     <TextView
         android:text="Name "
         android:layout_width="wrap_content"
@@ -48,7 +48,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/brandTxt"
-        android:layout_alignBaseline="@id/priceEdt"
         android:id="@+id/priceTxt" />
 
     <TextView
@@ -107,7 +106,7 @@
         android:ems="10"
         android:layout_below="@+id/brandEdt"
         android:layout_toRightOf="@id/priceTxt"
-        android:id="@+id/priceEdt" />
+        android:id="@+id/editPrice" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -115,7 +114,7 @@
         android:inputType="textPersonName"
         android:text="Stock"
         android:ems="10"
-        android:layout_below="@+id/priceEdt"
+        android:layout_below="@+id/editPrice"
         android:layout_toRightOf="@id/stockTxt"
         android:id="@+id/stockEdt" />
 
@@ -135,7 +134,9 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:id="@+id/btnaddProduct" />
+        android:id="@+id/btnaddProduct"
+        android:onClick="addProduct"/>
 
-        -->
+
+
 </RelativeLayout>

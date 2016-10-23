@@ -16,16 +16,19 @@
         android:text="TextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:id="@+id/marca"
+        android:layout_below="@+id/nombre"
         android:layout_toRightOf="@+id/img"
         android:layout_toEndOf="@+id/img"
-        android:id="@+id/nombre" />
+        android:layout_marginTop="14dp" />
 
     <TextView
         android:text="TextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/nombre"
-        android:layout_alignRight="@+id/nombre"
-        android:layout_alignEnd="@+id/nombre"
-        android:id="@+id/marca" />
+        android:id="@+id/nombre"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/img"
+        android:layout_toEndOf="@+id/img"
+        android:layout_marginTop="15dp" />
 </RelativeLayout>
