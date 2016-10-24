@@ -29,7 +29,7 @@ public class ProductAdapterRecycler extends RecyclerView.Adapter<ProductAdapterR
     public ProductViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
 
         //1.Crear un objeto inflater que inicializamos al layoutInlater del contexto
-       View item = LayoutInflater.from(parent.getContext()).inflate(R.layout.activity_list_item, parent);
+       View item = LayoutInflater.from(parent.getContext()).inflate(R.layout.activity_list_item, parent, false);
 
 
         return new ProductViewHolder(item);

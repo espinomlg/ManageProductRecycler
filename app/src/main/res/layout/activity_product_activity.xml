@@ -33,7 +33,7 @@
         android:layout_below="@+id/search_product"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:id="@+id/rcvProduct"/>
+        android:id="@+id/rcvProduct" />
 
     <!--Imprescindible si utilizas ListActivity -->
 

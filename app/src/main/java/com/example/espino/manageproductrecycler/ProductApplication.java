@@ -3,6 +3,7 @@ package com.example.espino.manageproductrecycler;
 import android.app.Application;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 import com.example.espino.manageproductrecycler.Modelo.Product;
@@ -20,6 +21,9 @@ public class ProductApplication extends Application {
     }
 
     public List<Product> getProductList(){
+
+        //Collections.sort(products9
+
         return productList;
     }
 
@@ -40,4 +44,6 @@ public class ProductApplication extends Application {
         productList.add(new Product("Supositorio","es Supositorio","1 gr","Supositorio",0.99,100,R.drawable.medicamento));
         productList.add(new Product("Corticoide","es Corticoide","1 gr","Corticoide",1.99,100,R.drawable.medicamento));
     }
+
+
 }

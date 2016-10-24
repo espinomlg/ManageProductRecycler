@@ -2,7 +2,9 @@ package com.example.espino.manageproductrecycler;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.widget.LinearLayout;
 
 import com.example.espino.manageproductrecycler.Adapter.ProductAdapterRecycler;
 
@@ -19,6 +21,7 @@ public class Product_activity extends AppCompatActivity {
 
         adapter = new ProductAdapterRecycler(this);
         rcvProduct= (RecyclerView) findViewById(R.id.rcvProduct);
+        rcvProduct.setLayoutManager(new LinearLayoutManager(this));
         rcvProduct.setAdapter(adapter);
         //el viewGroup del adapter es el rcvProduct
     }

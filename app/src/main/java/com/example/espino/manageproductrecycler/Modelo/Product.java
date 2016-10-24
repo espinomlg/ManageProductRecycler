@@ -6,7 +6,7 @@ import java.util.Locale;
  * Class product
  * */
 
-public class Product {
+public class Product implements Comparable<Product>{
 
     private int mId;
     private String mName;
@@ -118,6 +118,14 @@ public class Product {
         if (dossage != null ? !dossage.equals(product.dossage) : product.dossage != null)
             return false;
         return mBrand != null ? mBrand.equals(product.mBrand) : product.mBrand == null;
+
+    }
+
+    public int compareTo(Product p){
+        if(this.getmName().compareTo(p.getmName()) == 0)
+            return this.getmBrand().compareTo(p.getmBrand());
+        else
+            return this.getmName().compareTo(p.getmName());
 
     }
 }
