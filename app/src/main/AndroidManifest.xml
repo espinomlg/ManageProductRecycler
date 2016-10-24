@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.espino.manageproduct">
+    package="com.example.espino.manageproductrecycler">
 
     <application
-        android:name=".ProductApplication"
+        android:name="com.example.espino.manageproductrecycler.ProductApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ListProduct_activity">
+        <activity android:name="com.example.espino.manageproductrecycler.Product_activity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".AddProduct_Activity"/>
+        <activity android:name="com.example.espino.manageproductrecycler.AddProduct_Activity"/>
     </application>
 
 </manifest>

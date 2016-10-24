@@ -9,21 +9,13 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.espino.manageproduct.ListProduct_activity">
+    tools:context="com.example.espino.manageproductrecycler.Product_activity">
 
     <AutoCompleteTextView
         android:text="AutoCompleteTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/search_product" />
-
-    <ListView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_below="@id/search_product"
-        android:id="@android:id/list"/>
 
     <Button
         android:text="Add"
@@ -34,6 +26,14 @@
         android:layout_toEndOf="@+id/search_product"
         android:id="@+id/addBtn"
         android:onClick="onClick"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/search_product"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/rcvProduct"/>
 
     <!--Imprescindible si utilizas ListActivity -->
 

@@ -1,28 +1,31 @@
-package com.example.espino.manageproduct;
+package com.example.espino.manageproductrecycler;
 
-import android.app.ListActivity;
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.RecyclerView;
 
-import com.example.espino.manageproduct.Modelo.Product;
+import com.example.espino.manageproductrecycler.Adapter.ProductAdapterRecycler;
 
 
-public class ListProduct_activity extends ListActivity {
+public class Product_activity extends AppCompatActivity {
 
-    private ProductAdapterB adapter;
+    private ProductAdapterRecycler adapter;
+    private RecyclerView rcvProduct;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_list_product_activity);
+        setContentView(R.layout.activity_product_activity);
 
-        adapter = new ProductAdapterB(this);
-        getListView().setAdapter(adapter);
+        adapter = new ProductAdapterRecycler(this);
+        rcvProduct= (RecyclerView) findViewById(R.id.rcvProduct);
+        rcvProduct.setAdapter(adapter);
+        //el viewGroup del adapter es el rcvProduct
     }
 
+    /*
     public void onClick(View v){
-        startActivityForResult(new Intent(ListProduct_activity.this,AddProduct_Activity.class),0);
+        startActivityForResult(new Intent(Product_activity.this,AddProduct_Activity.class),0);
     }
 
     @Override
@@ -43,4 +46,6 @@ public class ListProduct_activity extends ListActivity {
 
 
     }
+
+    */
 }

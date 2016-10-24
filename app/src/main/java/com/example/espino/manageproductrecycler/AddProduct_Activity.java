@@ -1,4 +1,4 @@
-package com.example.espino.manageproduct;
+package com.example.espino.manageproductrecycler;
 
 import android.app.Activity;
 import android.content.Intent;

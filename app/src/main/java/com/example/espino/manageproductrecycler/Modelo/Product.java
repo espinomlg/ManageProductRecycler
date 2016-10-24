@@ -1,7 +1,6 @@
-package com.example.espino.manageproduct.Modelo;
+package com.example.espino.manageproductrecycler.Modelo;
 
 import java.util.Locale;
-import java.util.UUID;
 
 /**
  * Class product

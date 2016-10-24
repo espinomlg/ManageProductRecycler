@@ -1,12 +1,11 @@
-package com.example.espino.manageproduct;
+package com.example.espino.manageproductrecycler;
 
 import android.app.Application;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import com.example.espino.manageproduct.Modelo.Product;
-import com.example.espino.manageproduct.R;
+import com.example.espino.manageproductrecycler.Modelo.Product;
 
 /**
  * Created by espino on 20/10/16.
