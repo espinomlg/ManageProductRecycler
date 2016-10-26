@@ -1,5 +1,6 @@
 package com.example.espino.manageproductrecycler.Modelo;
 
+import java.util.Comparator;
 import java.util.Locale;
 
 /**
@@ -15,7 +16,20 @@ public class Product implements Comparable<Product>{
     private String mBrand;
     private double mPrice;
     private int mStock;
-    private int mImage;
+    private int mImage;  //(o1, o2) -> o1.getmPrice() - o2.getmPrice();
+
+    public static final Comparator<Product> PRICE_COMPARATOR = new Comparator<Product>() {
+        @Override
+        public int compare(Product o1, Product o2) {
+           return Double.compare(o1.getmPrice(), o2.getmPrice());
+        }
+    };
+    public static final Comparator<Product> STOCK_COMPARATOR = new Comparator<Product>() {
+        @Override
+        public int compare(Product o1, Product o2) {
+            return o1.getmStock() - o2.getmStock();
+        }
+    };
 
 
     public Product(String mName, String mDescription, String dossage, String mBrand, double mPrice, int mStock, int mImage) {

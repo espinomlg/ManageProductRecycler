@@ -22,7 +22,11 @@ public class ProductApplication extends Application {
 
     public List<Product> getProductList(){
 
-        //Collections.sort(products9
+        //Collections.sort(productList);
+
+        //Collections.sort(productList, Product.PRICE_COMPARATOR);
+
+        Collections.sort(productList, (p1,p2) -> Double.compare(p1.getmPrice(),p2.getmPrice()));
 
         return productList;
     }

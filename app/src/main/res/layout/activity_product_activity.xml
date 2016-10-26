@@ -24,6 +24,7 @@
         android:layout_alignParentTop="true"
         android:layout_toRightOf="@+id/search_product"
         android:layout_toEndOf="@+id/search_product"
+        android:background="@drawable/selectorbtn"
         android:id="@+id/addBtn"
         android:onClick="onClick"/>
 
