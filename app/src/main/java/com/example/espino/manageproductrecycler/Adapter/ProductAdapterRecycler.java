@@ -12,6 +12,8 @@ import com.example.espino.manageproductrecycler.Modelo.Product;
 import com.example.espino.manageproductrecycler.ProductApplication;
 import com.example.espino.manageproductrecycler.R;
 
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 
@@ -22,14 +24,14 @@ public class ProductAdapterRecycler extends RecyclerView.Adapter<ProductAdapterR
 
     public ProductAdapterRecycler(Context context) {
         this.context = context;
-        products = ((ProductApplication)context.getApplicationContext()).getProductList();
+        products = new ArrayList(((ProductApplication)context.getApplicationContext()).getProductList());
     }
 
     @Override
     public ProductViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
 
         //1.Crear un objeto inflater que inicializamos al layoutInlater del contexto
-       View item = LayoutInflater.from(parent.getContext()).inflate(R.layout.activity_list_item, parent, false);
+       View item = LayoutInflater.from(parent.getContext()).inflate(R.layout.activity_list_item, null);
 
 
         return new ProductViewHolder(item);
@@ -39,7 +41,7 @@ public class ProductAdapterRecycler extends RecyclerView.Adapter<ProductAdapterR
     public void onBindViewHolder(ProductViewHolder holder, int position) {
 
         //4.Asignar datos del adapter a los widget
-        holder.img.setImageResource(products.get(position).getmImage());
+    //    holder.img.setImageResource(products.get(position).getmImage());
         holder.nameTxt.setText(products.get(position).getmName());
         holder.stockTxt.setText(products.get(position).getFormattedUnitsinStocks());
 
@@ -56,15 +58,23 @@ public class ProductAdapterRecycler extends RecyclerView.Adapter<ProductAdapterR
     public static class  ProductViewHolder extends RecyclerView.ViewHolder{
 
         private TextView stockTxt, nameTxt;
-        private ImageView img;
+       // private ImageView img;
 
         public ProductViewHolder(View item){
             super(item);
             //3.Asignar a las variables los widget mediante el metodo findviewbyid
-            img = (ImageView) item.findViewById(R.id.img);
+     //       img = (ImageView) item.findViewById(R.id.img);
             nameTxt = (TextView) item.findViewById(R.id.nombre);
             stockTxt = (TextView) item.findViewById(R.id.marca);
         }
+    }
+
+    public void sortAlphabetically(boolean sort){
+        if(sort)
+            Collections.sort(products, (o1,o2) -> o1.getmStock() - o2.getmStock());
+        else
+            Collections.sort(products);
+        this.notifyDataSetChanged();
     }
 
 }

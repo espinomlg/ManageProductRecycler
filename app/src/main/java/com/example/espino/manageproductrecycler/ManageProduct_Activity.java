@@ -8,16 +8,19 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.EditText;
 
+import com.example.espino.manageproductrecycler.Modelo.Product;
+
+import java.util.List;
 
 
-public class AddProduct_Activity extends AppCompatActivity {
+public class ManageProduct_Activity extends AppCompatActivity {
 
     private EditText mName,mDescription,mDossage,mBrand,mPrice,mStock,mImage;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_add_product);
+        setContentView(R.layout.activity_manage_product);
 
         mName = (EditText) findViewById(R.id.nameEdt);
         mDescription = (EditText) findViewById(R.id.editDescription);
@@ -56,4 +59,5 @@ public class AddProduct_Activity extends AppCompatActivity {
         setResult(Activity.RESULT_OK,returnIntent);
         finish();
     }
+
 }
