@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">ManageProduct</string>
+    <string name="particular">Particular</string>
+    <string name="enterprise">Empresa</string>
+    <string name="enterprise_name">nombre de la empresa</string>
+    <string name="ok">Login</string>
+    <string name="usertxt">User</string>
+    <string name="passwdtxt">Password</string>
+    <string name="data_empty">Debe introducir un valor en el campo</string>
+    <string name="passwd_digit">Debe introducir al menos 1 dígito</string>
+    <string name="passwd_length">Debe tener como máximo 8 caracteres</string>
+    <string name="passwd_case">Debe introducir al menos una mayúscula y una minúscula</string>
+    <string name="usuario">Particular</string>
+    <string name="email">Email</string>
+    <string name="enterprisename">Enterprise name</string>
+    <string name="receive_email">i want to receive promotions via email</string>
+    <string name="accept_conditions">I accept the conditions and terms of use</string>
 </resources>

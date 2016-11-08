@@ -10,6 +10,8 @@
         android:id="@+id/action_order_alphabetically"
         app:showAsAction="always"
         android:title="Ordenar Producto"/>
+    <item android:title="Añadir producto"
+        android:id="@+id/menu_add_product"/>
     <item android:title="Configuración general"
         android:id="@+id/action_setting_general"/>
     <item android:title="Configuración cuenta"

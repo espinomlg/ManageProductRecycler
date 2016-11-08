@@ -77,4 +77,10 @@ public class ProductAdapterRecycler extends RecyclerView.Adapter<ProductAdapterR
         this.notifyDataSetChanged();
     }
 
+    public void addProduct(Product p){
+        ((ProductApplication)context.getApplicationContext()).addProduct(p);
+        products = new ArrayList<>(((ProductApplication)context.getApplicationContext()).getProductList());
+        this.notifyDataSetChanged();
+    }
+
 }

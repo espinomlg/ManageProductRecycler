@@ -1,5 +1,6 @@
 package com.example.espino.manageproductrecycler.Modelo;
 
+import java.io.Serializable;
 import java.util.Comparator;
 import java.util.Locale;
 
@@ -7,7 +8,7 @@ import java.util.Locale;
  * Class product
  * */
 
-public class Product implements Comparable<Product>{
+public class Product implements Comparable<Product>, Serializable{
 
     private int mId;
     private String mName;

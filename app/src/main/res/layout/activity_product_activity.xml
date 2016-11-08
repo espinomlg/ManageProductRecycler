@@ -9,24 +9,13 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.espino.manageproductrecycler.Product_activity">
+    tools:context="com.example.espino.manageproductrecycler.activities.Product_activity">
 
     <AutoCompleteTextView
         android:text="AutoCompleteTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/search_product" />
-
-    <Button
-        android:text="Add"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_toRightOf="@+id/search_product"
-        android:layout_toEndOf="@+id/search_product"
-        android:background="@drawable/selectorbtn"
-        android:id="@+id/addBtn"
-        android:onClick="onClick"/>
 
     <android.support.v7.widget.RecyclerView
         android:layout_width="match_parent"

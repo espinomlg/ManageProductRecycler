@@ -9,14 +9,18 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.example.espino.manageproductrecycler.Product_activity">
+        <activity android:name="com.example.espino.manageproductrecycler.activities.LoginRelative">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.espino.manageproductrecycler.ManageProduct_Activity"/>
+        <activity android:name="com.example.espino.manageproductrecycler.activities.ManageProduct_Activity"/>
+        <activity android:name=".activities.Product_activity"/>
+        <activity android:name=".activities.RegisterActivity"/>
+        <activity android:name=".activities.GeneralSettingActivity"/>
+        <activity android:name=".activities.AccountSettingsActivity"/>
     </application>
 
 </manifest>

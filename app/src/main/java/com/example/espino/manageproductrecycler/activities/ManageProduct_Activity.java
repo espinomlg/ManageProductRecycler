@@ -1,4 +1,4 @@
-package com.example.espino.manageproductrecycler;
+package com.example.espino.manageproductrecycler.activities;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.EditText;
 
 import com.example.espino.manageproductrecycler.Modelo.Product;
+import com.example.espino.manageproductrecycler.R;
 
 import java.util.List;
 
@@ -34,15 +35,17 @@ public class ManageProduct_Activity extends AppCompatActivity {
     }
 
     public void addProduct(View v){
-
-       /* Product p = new Product(mName.getText().toString(),
+/*
+        Product p = new Product(mName.getText().toString(),
                 mDescription.getText().toString(),
                 mDossage.getText().toString(),
                 mBrand.getText().toString(),
                 Double.parseDouble(mPrice.getText().toString()),
                 Integer.parseInt(mStock.getText().toString()),
                 R.drawable.medicamento);
-*/
+
+                */
+
         Bundle b = new Bundle();
         b.putString("name",mName.getText().toString());
         b.putString("description",mDescription.getText().toString());
@@ -52,10 +55,9 @@ public class ManageProduct_Activity extends AppCompatActivity {
         b.putString("stock",mStock.getText().toString());
         b.putString("image",mImage.getText().toString());
 
-        //((ProductApplication)getApplicationContext()).saveProduct(p);
 
         Intent returnIntent = new Intent();
-        returnIntent.putExtras(b);
+        returnIntent.putExtra("product",b);
         setResult(Activity.RESULT_OK,returnIntent);
         finish();
     }

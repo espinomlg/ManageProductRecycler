@@ -7,13 +7,15 @@ import java.util.Collections;
 import java.util.List;
 
 import com.example.espino.manageproductrecycler.Modelo.Product;
+import com.example.espino.manageproductrecycler.Modelo.User;
 
 
 public class ProductApplication extends Application {
 
-    ArrayList<Product> productList;
+    private ArrayList<Product> productList;
+    private User user;
 
-    public void saveProduct(Product p){
+    public void addProduct(Product p){
         productList.add(p);
     }
 
@@ -28,6 +30,13 @@ public class ProductApplication extends Application {
         return productList;
     }
 
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+    }
 
     @Override
     public void onCreate() {
